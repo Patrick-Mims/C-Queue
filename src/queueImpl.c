@@ -3,8 +3,29 @@
 
 #include "queue.h"
 
-int main(void)
+struct Queue
 {
-  printf("Queue\n");
-  return 0;
+  int *data;
+  int ptr;
+  int size;
+};
+
+queue_t new_queue(int size)
+{
+  queue_t queue;
+
+  if((queue = malloc(sizeof(queue_t))) == NULL) exit(EXIT_FAILURE);
+
+  if((queue->data = malloc(size * sizeof(int))) == NULL)
+  {
+    free(queue);
+    exit(EXIT_FAILURE);
+  }
+
+  queue->size = size;
+  queue->ptr = 0;
+
+  printf("New Queue Created!\n");
+
+  return queue;
 }

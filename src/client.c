@@ -3,16 +3,9 @@
 
 #include "queue.h"
 
-struct Queue
+int main(void)
 {
-  int *data;
-  int ptr;
-  int size;
-};
+  queue_t queue = new_queue(20);
 
-void insert();
-void remove();
-void first();
-void last();
-void isEmpty();
-void isFull();
+  return 0;
+}
