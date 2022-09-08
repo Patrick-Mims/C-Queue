@@ -9,5 +9,7 @@ int main(void)
 
   enqueue(queue, 500);
 
+  display_queue(queue);
+
   return 0;
 }

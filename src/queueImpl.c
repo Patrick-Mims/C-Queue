@@ -47,6 +47,14 @@ void enqueue(queue_t queue, int item)
   printf("Item enqueued: %d\n", queue->data[queue->ptr]);
 }
 
+void display_queue(queue_t queue)
+{
+  int i;
+
+  for(i = 0; i < queue->ptr; i++)
+    printf("Display-> %d\n", queue->data[queue->ptr]);
+}
+
 /*
 struct CQueue
 {
