@@ -1,14 +1,15 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
+/* Incomplete Type */
 typedef struct Queue *queue_t;
 
 queue_t new_queue();
 
-void insert_queue();
-void display_queue();
-int first_item();
-int last_item();
-int is_queue_empty();
+void dequeue(queue_t);
+void enqueue();
+void displayQueue();
+int isQueueFull();
+int isQueueEmpty();
 
 #endif
