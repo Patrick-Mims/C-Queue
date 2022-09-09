@@ -37,6 +37,11 @@ int isQueueFull(queue_t queue)
   return (queue->ptr == queue->size);
 }
 
+int isQueueEmpty(queue_t queue)
+{
+  return (queue->ptr == 0);
+}
+
 void enqueue(queue_t queue, int item)
 {
   if(isQueueFull(queue)) exit(EXIT_FAILURE);

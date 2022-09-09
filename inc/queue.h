@@ -9,7 +9,7 @@ queue_t new_queue();
 void dequeue(queue_t);
 void enqueue();
 void display_queue(queue_t);
-int isQueueFull();
-int isQueueEmpty();
+int isQueueFull(queue_t);
+int isQueueEmpty(queue_t);
 
 #endif

@@ -12,7 +12,7 @@ void email()
   const int size = 100;
   char line[INDEX] = {0};
 
-  if((fp = fopen("emails.txt", "r")) == NULL)
+  if((fp = fopen("MOCK_DATA.csv", "r")) == NULL)
   {
     printf("File Doesn't Exist");
     exit(EXIT_FAILURE);
